@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relat-absolu</title>
+    <style>
+        body{
+            background-color: rgb(36, 36, 36);
+            color: white;
+        }
+
+        .heading {
+            background-color: gray;
+            height: 125px;
+            text-align: center;
+        }
+
+        h1 {
+            padding-top: 10px;
+        }
+
+        .menu {
+            background-color: rgb(36, 92, 50);
+            color: white;
+
+            padding: 15px;
+            padding-left: 20px;
+            margin: 30px;
+            text-decoration: none;
+            border-radius: 20px;
+
+        }
+
+        h4 {
+            display: inline;
+        }
+
+        .r-one {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+
+            position: static;
+        }
+
+        .r-two {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            left: 30px;
+            top: 40px;
+
+            position: relative;
+            z-index: 5;
+        }
+
+        .r-three {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .absolute-eg1{
+            margin-left: 100px;
+            margin-top: 200px;
+            border: solid black 2px;
+            height: 200px;
+            width: 400px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- CSS Positioning -->
+    <div class="heading">
+        <h1 style="text-align: center;">CSS Positioning</h1>
+        <a class="menu" href="index.html">static</a>
+        <a class="menu" href="relative&absolute.html#2">relative</a>
+        <a class="menu" href="relative&absolute.html#3">absolute</a>
+        <a class="menu" href="fixed.html">Fixed</a>
+        <a class="menu" href="sticky.html">sticky</a>
+    </div>
+
+    <div id="2">
+        <h2>Position relative :</h2>
+        <p> Position relative to its normal position. Can set position with properties : </p>
+        <ul>
+            <li>left</li>
+            <li>right</li>
+            <li>top</li>
+            <li>bottom</li>
+        </ul>
+        <h4>z-index :</h4>
+        <ul>
+            <li>Specify priority of an element in relative position</li>
+            <li>heigher priority element can overlap on lower elements</li>
+            <li>low-high : 1 - inifinity priority</li>
+        </ul>
+        <h3>Example : </h3>
+        <ul>
+            <li>red : static.</li>
+            <li>black : relative, z-index 5, left: 30px; top: 40px;</li>
+            <li>blue : relative, z-index 2.</li>
+        </ul>
+        <div class="r-one"></div>
+        <div class="r-two"></div>
+        <div class="r-three"></div>
+    </div>
+
+    <hr>
+
+    <div id="3">
+        <h2>Position absolute :</h2>
+        <p>Position relative to its nearest positioned parent element (ancestor).
+            If parent element is static then the absolute value means the whole screen.
+            (eg: top: 100px [it start from the top of the screen.])
+        </p>
+        <h3>Examples :</h3>
+        <ol>
+            <li>Parent as screen (parent's position: static)</li>
+        </ol>
+
+        <div class="absolute-eg1">
+            <h1 class="item-eg1">Hello absolute</h1>
+
+        <div class="absolute-eg2">
+            <h1 class="item-eg2">Hello absolute</h1>
+
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+
+</html>

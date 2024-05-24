@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+        body{
+            background-color: rgb(36, 36, 36);
+            color: white;
+        }
+
+        .heading {
+            background-color: gray;
+            height: 125px;
+            text-align: center;
+        }
+
+        h1 {
+            padding-top: 10px;
+        }
+
+        .menu {
+            background-color: rgb(36, 92, 50);
+            color: white;
+
+            padding: 15px;
+            padding-left: 20px;
+            margin: 30px;
+            text-decoration: none;
+            border-radius: 20px;
+
+        }
+
+        h4 {
+            display: inline;
+        }
+
+        .r-one {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+
+            position: static;
+        }
+
+        .r-two {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            left: 30px;
+            top: 40px;
+
+            position: relative;
+            z-index: 5;
+        }
+
+        .r-three {
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Positioning -->
+    <div class="heading">
+        <h1 style="text-align: center;">CSS Positioning</h1>
+        <a class="menu" href="index.html">static</a>
+        <a class="menu" href="relative&absolute.html#2">relative</a>
+        <a class="menu" href="relative&absolute.html#3">absolute</a>
+        <a class="menu" href="fixed.html">Fixed</a>
+        <a class="menu" href="sticky.html">sticky</a>
+    </div>
+
+    <hr>
+
+    <div id="1">
+        <h4 style="text-align: center;">Position static</h4>
+        <p>
+        <h4>Default</h4>, follows normal document flow</p>
+    </div>
+
+    <hr>
+
+    <div id="2">
+        <h3>Position relative :</h3>
+        <p> Position relative to its normal position. Can set position with properties : </p>
+        <ul>
+            <li>left</li>
+            <li>right</li>
+            <li>top</li>
+            <li>bottom</li>
+        </ul>
+        <h4>z-index :</h4>
+        <ul>
+            <li>Specify priority of an element in relative position</li>
+            <li>heigher priority element can overlap on lower elements</li>
+            <li>low-high : 1 - inifinity priority</li>
+        </ul>
+        <h3>Example : </h3>
+        <p>red : static .
+            black : relative, z-index 5.
+            blue : relative, z-index 2.
+        </p>
+        <div class="r-one"></div>
+        <div class="r-two"></div>
+        <div class="r-three"></div>
+    </div>
+
+    <hr>
+
+    <div id="3">
+        <h3>Position absolute :</h3>
+        <p>Position relative to its nearest positioned parent element (ancestor)</p>
+    </div>
+
+    <hr>
+
+    <div id="4">
+        <h3>Position fixed :</h3>
+        <p>Position relative to the viewport remains fixed during scrolling</p>
+    </div>
+
+    <hr>
+
+</body>
+
+</html>
