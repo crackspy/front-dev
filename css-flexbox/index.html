@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .eg1{
+            display: flex;
+        }
+
+        .eg1 h1{
+            background-color: greenyellow;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .eg2{
+            display: flex;
+            background-color: greenyellow;
+            width: 300px;
+            flex-wrap: wrap;
+        }
+
+        .eg2 h2{
+            padding: 10px;
+            margin: 5px;
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS - FLEXBOX</h1>
+    <p>A div has display: flex;
+        <ul>
+            <li>it is a flex container.</li>
+            <li>its elements are flex items.</li>
+        </ul>
+    properties :
+    <ul>
+        <li>flex-direction:</li>
+        <ul>
+            <li>row (default)</li>
+            <li>column</li>
+        </ul>
+        <li>flex-wrap:</li>
+        <ul>
+            <li>nowarp (default)</li>
+            <li>warp</li>
+        </ul>
+    </ul>
+    </p>
+    <h3>Example 1 :</h3>
+    <div class="eg1">
+        <h1>One</h1>
+        <h1>Two</h1>
+        <h1>Three</h1>
+    </div>
+
+    <h3>Example 2 :</h3>
+    <p>
+        flex-wrap: warp; Adjust elemnts arrangement in vertical if there is no more width available.
+    </p>
+    <div class="eg2">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+        <h2>Four</h2>
+        <h2>Five</h2>
+        <h2>Six</h2>
+    </div>
+
+</body>
+</html>
