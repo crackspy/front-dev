@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .eg1-1 {
+            display: flex;
+            flex-direction: row;
+        }
+        .eg1-1 h1 {
+            background-color: greenyellow;
+            padding: 5px;
+            margin: 2px;
+        }
+        .eg1-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .eg1-2 h1 {
+            background-color: greenyellow;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .eg2-1 {
+            display: flex;
+            background-color: greenyellow;
+            width: 300px;
+            flex-wrap: nowrap;
+        }
+
+        .eg2-1 h2 {
+            padding: 10px;
+            margin: 5px;
+            background-color: black;
+            color: white;
+
+        }
+        .eg2-2 {
+            display: flex;
+            background-color: greenyellow;
+            width: 300px;
+            flex-wrap: wrap;
+        }
+
+        .eg2-2 h2 {
+            padding: 10px;
+            margin: 5px;
+            background-color: black;
+            color: white;
+
+        }
+
+        .eg3-1 {
+            background-color: greenyellow;
+            display: flex;
+            justify-content: center;
+        }
+
+        .eg3-1 h2 {
+            color: white;
+            padding: 10px;
+            background-color: black;
+            margin: 5px;
+
+        }
+        .eg3-2 {
+            background-color: greenyellow;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .eg3-2 h2 {
+            color: white;
+            padding: 10px;
+            background-color: black;
+            margin: 5px;
+
+        }
+        .eg3-3 {
+            background-color: greenyellow;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .eg3-3 h2 {
+            color: white;
+            padding: 10px;
+            background-color: black;
+            margin: 5px;
+
+        }
+        .eg3-4 {
+            background-color: greenyellow;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .eg3-4 h2 {
+            color: white;
+            padding: 10px;
+            background-color: black;
+            margin: 5px;
+
+        }
+        .eg3-5 {
+            background-color: greenyellow;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .eg3-5 h2 {
+            color: white;
+            padding: 10px;
+            background-color: black;
+            margin: 5px;
+
+        }
+        .eg3-6 {
+            background-color: greenyellow;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .eg3-6 h2 {
+            color: white;
+            padding: 10px;
+            background-color: black;
+            margin: 5px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>CSS - FLEXBOX</h1>
+    <p>A div has display: flex;
+    <ul>
+        <li>it is a flex container.</li>
+        <li>its elements are flex items.</li>
+    </ul>
+    </p>
+
+
+    <h3>flex-direction : -</h3>
+    <ul>
+        <li>row (default)</li>
+        <li>column</li>
+    </ul>
+    <p>flex-direction :row;</p>
+    <div class="eg1-1">
+        <h1>One</h1>
+        <h1>Two</h1>
+        <h1>Three</h1>
+    </div>
+    <p>flex-direction :column;</p>
+    <div class="eg1-2">
+        <h1>One</h1>
+        <h1>Two</h1>
+        <h1>Three</h1>
+    </div>
+
+
+    <h3>flex-wrap: -</h3>
+    <ul>
+        <li>nowarp (default)</li>
+        <li>warp</li>
+    </ul>
+    <p>flex-wrap: warp;</p>
+    <div class="eg2-1">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+        <h2>Four</h2>
+        <h2>Five</h2>
+        <h2>Six</h2>
+    </div>
+    <p>
+        flex-wrap: warp; <br>
+        Adjust elemnts arrangement in vertical if there is no more width available.
+    </p>
+    <div class="eg2-2">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+        <h2>Four</h2>
+        <h2>Five</h2>
+        <h2>Six</h2>
+    </div>
+
+    <h3>justify-content : -</h3>
+    <ul>
+        <li>center</li>
+        <li>space-around</li>
+        <li>space-between</li>
+        <li>space-evenly</li>
+        <li>flex-start</li>
+        <li>flex-end</li>
+    </ul>
+    <p>justify-content: center;</p>
+    <div class="eg3-1">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+    </div>
+    <p>justify-content: space-around;</p>
+    <div class="eg3-2">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+    </div>
+    <p>justify-content: space-between;</p>
+    <div class="eg3-3">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+    </div>
+    <p>justify-content: space-evenly;</p>
+    <div class="eg3-4">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+    </div>
+    <p>justify-content: flex-start;</p>
+    <div class="eg3-5">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+    </div>
+    <p>justify-content: flex-start;</p>
+    <div class="eg3-6">
+        <h2>One</h2>
+        <h2>Two</h2>
+        <h2>Three</h2>
+    </div>
+
+</body>
+
+</html>
