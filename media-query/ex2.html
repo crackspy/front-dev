@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media qurey excs-2</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .one{
+            background-color: aqua;
+            height: 100px;
+            flex-basis: 20%;
+            margin: 5px;
+        }
+        .two{
+            background-color: rgb(100, 43, 233);
+            height: 100px;
+            flex-basis: 20%;
+            margin: 5px;
+        }
+        .three{
+            background-color: rgb(59, 231, 102);
+            height: 100px;
+            flex-basis: 20%;
+            margin: 5px;
+        }
+        .four{
+            background-color: blue;
+            height: 100px;
+            flex-basis: 20%;
+            margin: 5px;
+        }
+
+        @media screen and (max-width:900px){
+            .one, .two, .three, .four{
+                flex-basis: 40%;
+                margin: 10px;
+            }
+        }
+        @media screen and (max-width:500px){
+            .one, .two, .three, .four{
+                flex-basis: 100%;
+                margin: 15x;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+   </div>
+    
+</body>
+</html>
